@@ -142,15 +142,17 @@ function draw() {
      
      obstaclesGroup.setVelocityXEach(0);
      cloudsGroup.setVelocityXEach(0);    
+     
+       if(mousePressedOver(restart)) {
+      reset();
+    }
    }
   
  
   //stop trex from falling down
   trex.collide(invisibleGround);
   
-  if(mousePressedOver(restart)) {
-      reset();
-    }
+
 
 
   drawSprites();
